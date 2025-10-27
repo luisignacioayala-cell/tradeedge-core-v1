@@ -1,0 +1,38 @@
+:root{
+  --bg:#ffffff;
+  --panel:#f7f7f8;
+  --text:#111111;
+  --text2:#444444;
+  --accent:#2563EB;
+  --success:#16A34A;
+  --warn:#D97706;
+  --error:#DC2626;
+  --border:#E5E7EB;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,Arial}
+h1,h2,h3{margin:0 0 .5rem 0}
+a{color:var(--accent);text-decoration:none}
+.container{max-width:1200px;margin:0 auto;padding:16px}
+.nav{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--bg);z-index:10}
+.tabs{display:flex;gap:8px}
+.tab{padding:8px 12px;border:1px solid var(--border);border-radius:8px;background:var(--panel);cursor:pointer}
+.tab.active{outline:2px solid var(--accent)}
+.pill{padding:6px 10px;border-radius:999px;border:1px solid var(--border);font-size:12px}
+.pill.LIVE{background:#ECFDF5;color:#065F46;border-color:#A7F3D0}
+.pill.CONNECTING,.pill.RECONNECTING{background:#EFF6FF;color:#1E40AF;border-color:#BFDBFE}
+.pill.OFFLINE{background:#FEF2F2;color:#991B1B;border-color:#FECACA}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:12px}
+.grid{display:grid;gap:12px}
+.grid-2{grid-template-columns:1fr 1fr}
+.grid-3{grid-template-columns:1fr 1fr 1fr}
+.table{width:100%;border-collapse:separate;border-spacing:0}
+.table th,.table td{padding:8px 10px;border-bottom:1px solid var(--border);font-size:14px}
+.table tr:nth-child(even){background:#FAFAFB}
+.input{padding:8px;border:1px solid var(--border);border-radius:8px;font-size:14px}
+.button{padding:8px 12px;border:1px solid var(--border);border-radius:10px;background:var(--bg);cursor:pointer}
+.button.primary{background:var(--accent);color:white;border-color:transparent}
+.kbd{font-family:JetBrains Mono,ui-monospace,monospace;font-size:12px}
+.badge{padding:3px 6px;border-radius:6px;border:1px solid var(--border);font-size:12px}
+.footer{padding:16px;text-align:center;color:var(--text2)}
